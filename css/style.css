@@ -26,6 +26,41 @@ body {
     margin: 0;
 }
 
+#login-form {
+    text-align: center;
+    padding-top: 20px
+}
+#login-form input:first-child {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #fff solid;
+    color: #fff;
+    width: 200px;
+    height: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+#login-form input:first-child:focus-visible {
+    outline: none;
+}
+#login-form input:first-child::placeholder {
+    color: rgb(255,255,255, .7);
+}
+#login-form input:last-child {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    color: rgb(0,0,0, .6);
+    background-color: rgb(255, 255, 255, .5);
+    border: none;
+    border-radius: 2px;
+}
+#login-form input:last-child:hover {
+    color: rgb(0,0,0, .8);
+    background-color: rgb(255, 255, 255, .8);
+    border: 2px solid rgba(177, 177, 177, 0.6) inset;
+}
+
 #todo-form {
     padding-top: 80px;
     text-align: center;
@@ -44,7 +79,6 @@ body {
 }
 #todo-form input::placeholder {
     color: rgb(255,255,255, .7);
-    text-align: center;
     font-size: 18px;
 }
 
@@ -60,6 +94,7 @@ body {
     justify-content: space-between;
     padding: 3px 0 3px 0;
     font-weight: 600;
+    font-size: 18px;
 }
 #todo-list li button {
     border: none;
